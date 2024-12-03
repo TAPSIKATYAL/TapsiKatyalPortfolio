@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: 'Poppins, sans-serif';
+  font-family: 'Bear';
 }
 :root{
     --bg-color: #1f242d;
@@ -23,6 +23,8 @@ html{
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    background-color: #1e242e; /* Matches the background color in the image */
+    color: #f0f0f0; /* Light text for contrast */
 }
 .main-container{
     width: 100%;
@@ -72,7 +74,7 @@ body{
     min-height: 100vh;
 }
 .home-content h3{
- font-size: 3.2rem;
+  font-size:  35px;
  font-weight: 700;
  
 }
@@ -83,7 +85,7 @@ body{
 }
 
 .home-content p{
-    font-size: 1.6rem;
+    font-size:  35px;
 }
 .home-img img{
     width: 35vw;;
@@ -134,6 +136,9 @@ body{
     font-size: 2.4rem;
     font-weight: 600;
     color: #3953ab;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 .skill-module-topic{
     display: flex;
@@ -164,12 +169,77 @@ body{
 
 }
 
+.work-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.2rem;
+}
+
+
+
+.work-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.work-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff; /* White for the main heading */
+  text-transform: uppercase;
+}
+
+.experience-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #2b3644; /* Slightly darker background for experience items */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #ffffff; /* White for job titles */
+}
+.experience-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #b0bec5; /* Lighter color for company names */
+    font-style: italic;
+}
+  
+  .experience-item p {
+    font-size: 1.1rem; /* Increase font size for metadata */
+  margin: 8px 0;
+  line-height: 1.6; /* Add more spacing between lines */
+  color: #e8e8e8;/* Light gray for metadata */
+  }
+  
+  .experience-item ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+  }
+  
+  .experience-item ul li {
+    font-size: 1.4rem; /* Increase font size for bullet points */
+    margin-bottom: 10px;
+    line-height: 1.8; /* More line spacing for better clarity */
+    color: #dfe4ea;/* Slightly brighter text for bullet points */
+  }
 @media (max-width: 768px) {
     .navbar a {
         font-size: 1.4rem;
         margin-left: 2rem;
     }
-
+    .work-container {
+        padding: 10px;
+      }
+    
     .home {
         flex-direction: column;
         padding: 10rem 5%;
@@ -188,4 +258,23 @@ body{
         margin-bottom: 20px;
         width: 80%;
     }
+    .work-container h1 {
+        font-size: 2rem;
+      }
+    
+      .experience-item {
+        padding: 15px;
+      }
+    
+      .experience-item h2 {
+        font-size: 1.5rem;
+      }
+    
+      .experience-item h3 {
+        font-size: 1.2rem;
+      }
+    
+      .experience-item ul li {
+        font-size: 0.9rem;
+      }
 }
