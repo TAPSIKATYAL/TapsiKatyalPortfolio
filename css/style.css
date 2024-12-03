@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: 'Bear';
+  font-family: 'Arial', sans-serif;
 }
 :root{
     --bg-color: #1f242d;
@@ -175,8 +175,6 @@ body{
     align-items: center;
     font-size: 3.2rem;
 }
-
-
 
 .work-container {
   max-width: 800px;
